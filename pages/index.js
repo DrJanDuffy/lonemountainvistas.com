@@ -25,10 +25,10 @@ export default function Home() {
                 <span className="hero-title-accent"> Lone Mountain Vistas</span>
               </h1>
               <p className="hero-subtitle">
-                Premier luxury real estate in northwest Las Vegas. Experience the perfect blend of mountain views, 
+                Premier luxury real estate in northwest Las Vegas. Experience the perfect blend of mountain views,
                 modern amenities, and exceptional community living.
               </p>
-              
+
               <div className="hero-cta-group">
                 <Link href="/all-properties" className="hero-cta-primary">
                   Browse Properties
