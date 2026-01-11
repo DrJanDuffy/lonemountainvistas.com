@@ -19,7 +19,7 @@ export default function AllProperties({ properties }) {
 
       <main className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold text-[#0A2540] mb-8">Available Properties</h1>
-        
+
         <div className="mb-12 bg-blue-50 p-6 rounded-lg">
           <h2 className="text-2xl font-bold text-[#0A2540] mb-4 text-center">Search Properties</h2>
           <RealScoutAdvancedSearch className="properties-search-widget" />
