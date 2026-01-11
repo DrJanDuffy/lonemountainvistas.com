@@ -14,9 +14,16 @@ function MyApp({ Component, pageProps }) {
 
       {/* RealScout Widget Script - Loaded globally for all pages */}
       <Script
-        src={`https://em.realscout.com/widgets/${REALSCOUT_AGENT_ID}.js`}
+        src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
         strategy="afterInteractive"
+        type="module"
       />
+      <style jsx global>{`
+        realscout-office-listings {
+          --rs-listing-divider-color: #0e64c8;
+          width: 100%;
+        }
+      `}</style>
 
       <Component {...pageProps} />
     </>

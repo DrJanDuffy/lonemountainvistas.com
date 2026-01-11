@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import RealScoutWidget from '../components/RealScoutWidget';
+import RealScoutOfficeListings from '../components/RealScoutOfficeListings';
 
 export default function LoneMountainPark() {
   return (
@@ -244,7 +245,7 @@ export default function LoneMountainPark() {
           <div className="mt-12 pt-8 border-t border-gray-200">
             <h3 className="text-2xl font-semibold text-[#0A2540] mb-4">Search Lone Mountain Vistas Homes</h3>
             <div className="bg-blue-50 p-6 rounded-lg mb-8">
-              <RealScoutWidget 
+              <RealScoutWidget
                 searchType="advanced"
                 defaultLocation="Lone Mountain, Las Vegas, NV 89129"
                 primaryColor="#1a365d"
@@ -272,6 +273,11 @@ export default function LoneMountainPark() {
             </ul>
           </div>
         </article>
+
+        <section className="office-listings-section mt-12">
+          <h2 className="text-3xl font-bold text-[#0A2540] mb-6 text-center">Featured Properties</h2>
+          <RealScoutOfficeListings />
+        </section>
       </main>
     </>
   );

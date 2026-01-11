@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import RealScoutWidget from '../components/RealScoutWidget';
+import RealScoutOfficeListings from '../components/RealScoutOfficeListings';
 
 export default function LoneMountainVistaV() {
   return (
@@ -304,7 +305,7 @@ export default function LoneMountainVistaV() {
           <div className="mt-12 pt-8 border-t border-gray-200">
             <h3 className="text-2xl font-semibold text-[#0A2540] mb-4">Search Homes in Lone Mountain Vista V</h3>
             <div className="bg-blue-50 p-6 rounded-lg mb-8">
-              <RealScoutWidget 
+              <RealScoutWidget
                 searchType="advanced"
                 defaultLocation="Lone Mountain Vista V, Las Vegas, NV"
                 primaryColor="#1a365d"
