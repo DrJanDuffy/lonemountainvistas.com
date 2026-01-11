@@ -26,6 +26,12 @@ function MyApp({ Component, pageProps }) {
           --rs-listing-divider-color: #0e64c8;
           width: 100%;
         }
+        realscout-advanced-search {
+          --rs-as-button-text-color: #ffffff;
+          --rs-as-background-color: #ffffff;
+          --rs-as-button-color: #4a90e2;
+          --rs-as-widget-width: 500px !important;
+        }
       `}</style>
 
       <Component {...pageProps} />

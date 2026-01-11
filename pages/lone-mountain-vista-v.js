@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import RealScoutWidget from '../components/RealScoutWidget';
+import RealScoutAdvancedSearch from '../components/RealScoutAdvancedSearch';
 import RealScoutOfficeListings from '../components/RealScoutOfficeListings';
 
 export default function LoneMountainVistaV() {

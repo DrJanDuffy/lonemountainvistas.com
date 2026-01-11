@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import RealScoutWidget from '../components/RealScoutWidget';
+import RealScoutAdvancedSearch from '../components/RealScoutAdvancedSearch';
 import RealScoutOfficeListings from '../components/RealScoutOfficeListings';
 
 export default function Home() {
@@ -30,12 +31,7 @@ export default function Home() {
 
         <section className="search-section">
           <h2 className="search-title">Find Your Dream Home in Lone Mountain Vistas</h2>
-          <RealScoutWidget
-            searchType="simple"
-            defaultLocation="Lone Mountain, Las Vegas, NV 89129"
-            primaryColor="#1a365d"
-            className="homepage-search-widget"
-          />
+          <RealScoutAdvancedSearch className="homepage-search-widget" />
         </section>
 
         <nav className="navigation">

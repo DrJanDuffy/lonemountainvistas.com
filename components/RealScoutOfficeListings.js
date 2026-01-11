@@ -30,7 +30,7 @@ export default function RealScoutOfficeListings({
       if (className) {
         element.className = className;
       }
-      
+
       // Set CSS custom property for divider color
       element.style.setProperty('--rs-listing-divider-color', dividerColor);
       element.style.width = '100%';
