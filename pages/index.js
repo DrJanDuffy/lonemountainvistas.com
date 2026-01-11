@@ -13,10 +13,17 @@ export default function Home() {
         <h1>Lone Mountain Vistas</h1>
         <p className="tagline">Luxury Real Estate in Las Vegas</p>
         <div className="contact-info">
-          <p>📞 (555) 123-4567</p>
-          <p>📧 info@lonemountainvistas.com</p>
+          <p className="agent-name">Dr. Jan Duffy</p>
+          <p className="company-name">Berkshire Hathaway HomeServices</p>
+          <p className="team-name">Head of Lone Mountain Heights Team</p>
+          <p className="tagline-sub">Your Complete Real Estate Partner</p>
+          <p className="expertise">Local Expert • Global Network</p>
+          <div className="contact-details">
+            <p>📞 <a href="tel:702-222-1964">702-222-1964</a></p>
+            <p>✉️ <a href="mailto:DrJanSells@lonemountainVistas.com">DrJanSells@lonemountainVistas.com</a></p>
+          </div>
         </div>
-        
+
         <nav className="navigation">
           <h2 className="nav-title">Explore Lone Mountain</h2>
           <div className="nav-links">
@@ -70,11 +77,58 @@ export default function Home() {
         }
         .contact-info {
           margin-top: 2rem;
-          font-size: 1.2rem;
-          color: #666;
+          padding: 2rem;
+          background: white;
+          border-radius: 12px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          max-width: 600px;
         }
-        .contact-info p {
-          margin: 0.5rem 0;
+        .agent-name {
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: #0A2540;
+          margin-bottom: 0.5rem;
+        }
+        .company-name {
+          font-size: 1.1rem;
+          color: #3A8DDE;
+          font-weight: 600;
+          margin-bottom: 0.3rem;
+        }
+        .team-name {
+          font-size: 1rem;
+          color: #666;
+          margin-bottom: 1rem;
+        }
+        .tagline-sub {
+          font-size: 1.2rem;
+          color: #0A2540;
+          font-weight: 500;
+          margin: 1rem 0 0.5rem 0;
+        }
+        .expertise {
+          font-size: 1rem;
+          color: #16B286;
+          font-weight: 500;
+          margin-bottom: 1.5rem;
+        }
+        .contact-details {
+          margin-top: 1.5rem;
+          padding-top: 1.5rem;
+          border-top: 2px solid #e3e8ef;
+        }
+        .contact-details p {
+          margin: 0.8rem 0;
+          font-size: 1.1rem;
+        }
+        .contact-details a {
+          color: #3A8DDE;
+          text-decoration: none;
+          transition: color 0.2s;
+        }
+        .contact-details a:hover {
+          color: #2D7BC7;
+          text-decoration: underline;
         }
         .navigation {
           margin-top: 3rem;
@@ -136,4 +190,4 @@ export default function Home() {
       `}</style>
     </div>
   );
-} 
+}
