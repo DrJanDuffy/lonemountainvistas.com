@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import RealScoutWidget from '../components/RealScoutWidget';
 
 export default function Home() {
   return (
@@ -23,6 +24,16 @@ export default function Home() {
             <p>✉️ <a href="mailto:DrDuffySells@LoneMountainVistas.com">DrDuffySells@LoneMountainVistas.com</a></p>
           </div>
         </div>
+
+        <section className="search-section">
+          <h2 className="search-title">Find Your Dream Home in Lone Mountain Vistas</h2>
+          <RealScoutWidget 
+            searchType="simple"
+            defaultLocation="Lone Mountain, Las Vegas, NV 89129"
+            primaryColor="#1a365d"
+            className="homepage-search-widget"
+          />
+        </section>
 
         <nav className="navigation">
           <h2 className="nav-title">Explore Lone Mountain</h2>
@@ -172,9 +183,31 @@ export default function Home() {
           font-size: 0.9rem;
           color: #666;
         }
+        .search-section {
+          margin-top: 3rem;
+          width: 100%;
+          max-width: 900px;
+          padding: 2rem;
+          background: white;
+          border-radius: 12px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .search-title {
+          font-size: 1.8rem;
+          color: #0A2540;
+          margin-bottom: 1.5rem;
+          text-align: center;
+        }
+        .homepage-search-widget {
+          width: 100%;
+          min-height: 200px;
+        }
         @media (max-width: 768px) {
           .nav-links {
             grid-template-columns: 1fr;
+          }
+          .search-section {
+            padding: 1.5rem;
           }
         }
       `}</style>

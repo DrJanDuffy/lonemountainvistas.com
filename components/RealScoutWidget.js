@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 /**
  * RealScout Widget Component for Next.js
  * Embeds RealScout property search widgets on any page
- * 
+ *
  * @param {Object} props
  * @param {string} props.agentId - RealScout agent encoded ID
  * @param {string} props.searchType - Type of search: 'simple', 'advanced', 'home-value', 'your-listings', 'office-listings'
@@ -30,7 +30,7 @@ export default function RealScoutWidget({
   }, [agentId]);
 
   // Determine the widget class name based on search type
-  const widgetClass = 
+  const widgetClass =
     searchType === 'home-value' ? 'realscout-home-value' :
     searchType === 'your-listings' ? 'realscout-your-listings' :
     searchType === 'office-listings' ? 'realscout-office-listings' :

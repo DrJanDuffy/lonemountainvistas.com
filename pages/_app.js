@@ -11,13 +11,13 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      
+
       {/* RealScout Widget Script - Loaded globally for all pages */}
       <Script
         src={`https://em.realscout.com/widgets/${REALSCOUT_AGENT_ID}.js`}
         strategy="afterInteractive"
       />
-      
+
       <Component {...pageProps} />
     </>
   );
