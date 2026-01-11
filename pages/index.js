@@ -20,7 +20,7 @@ export default function Home() {
           <p className="expertise">Local Expert • Global Network</p>
           <div className="contact-details">
             <p>📞 <a href="tel:702-222-1964">702-222-1964</a></p>
-            <p>✉️ <a href="mailto:DrJanSells@lonemountainVistas.com">DrJanSells@lonemountainVistas.com</a></p>
+            <p>✉️ <a href="mailto:DrDuffySells@LoneMountainVistas.com">DrDuffySells@LoneMountainVistas.com</a></p>
           </div>
         </div>
 
