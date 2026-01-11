@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import propertiesData from '../assets/data/properties.json';
 import RealScoutAdvancedSearch from '../components/RealScoutAdvancedSearch';
+import RealScoutSimpleSearch from '../components/RealScoutSimpleSearch';
 import RealScoutOfficeListings from '../components/RealScoutOfficeListings';
 
 export default function AllProperties({ properties }) {
