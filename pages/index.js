@@ -19,17 +19,24 @@ export default function Home() {
         <meta property="og:url" content="https://lonemountainvistas.com/" />
         <meta property="og:title" content="Lone Mountain Vistas | Luxury Real Estate in Northwest Las Vegas" />
         <meta property="og:description" content="Premier luxury real estate in northwest Las Vegas. Explore properties near Lone Mountain Regional Park, The Estates at Lone Mountain, and discover the Lone Mountain lifestyle." />
-        <meta property="og:image" content="https://lonemountainvistas.com/og-image.jpg" />
+        <meta property="og:image" content="https://lonemountainvistas.com/images/og-image.jpg" />
+        <meta property="og:image:secure_url" content="https://lonemountainvistas.com/images/og-image.jpg" />
+        <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Lone Mountain Vistas - Luxury Real Estate in Northwest Las Vegas" />
         <meta property="og:site_name" content="Lone Mountain Vistas" />
+        <meta property="og:locale" content="en_US" />
 
-        {/* Twitter */}
+        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@LoneMountainVistas" />
+        <meta name="twitter:creator" content="@LoneMountainVistas" />
         <meta name="twitter:url" content="https://lonemountainvistas.com/" />
-        <meta name="twitter:title" content="Lone Mountain Vistas | Luxury Real Estate Las Vegas" />
-        <meta name="twitter:description" content="Premier luxury real estate in northwest Las Vegas. Explore properties near Lone Mountain Regional Park." />
-        <meta name="twitter:image" content="https://lonemountainvistas.com/og-image.jpg" />
+        <meta name="twitter:title" content="Lone Mountain Vistas | Luxury Real Estate in Northwest Las Vegas" />
+        <meta name="twitter:description" content="Premier luxury real estate in northwest Las Vegas. Explore properties near Lone Mountain Regional Park, The Estates at Lone Mountain, and discover the Lone Mountain lifestyle." />
+        <meta name="twitter:image" content="https://lonemountainvistas.com/images/og-image.jpg" />
+        <meta name="twitter:image:alt" content="Lone Mountain Vistas - Luxury Real Estate in Northwest Las Vegas" />
       </Head>
       <main>
         {/* Hero Section */}
