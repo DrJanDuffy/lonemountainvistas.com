@@ -60,6 +60,24 @@ export default function Home() {
           </div>
         </nav>
 
+        <nav className="navigation" style={{ marginTop: '2rem' }}>
+          <h2 className="nav-title">Quick Links</h2>
+          <div className="nav-links">
+            <Link href="/about" className="nav-link">
+              <span className="nav-link-title">About Dr. Jan Duffy</span>
+              <span className="nav-link-desc">Meet your real estate expert</span>
+            </Link>
+            <Link href="/services" className="nav-link">
+              <span className="nav-link-title">Our Services</span>
+              <span className="nav-link-desc">Buyer & seller services</span>
+            </Link>
+            <Link href="/contact" className="nav-link">
+              <span className="nav-link-title">Contact Us</span>
+              <span className="nav-link-desc">Get in touch today</span>
+            </Link>
+          </div>
+        </nav>
+
         <section className="office-listings-section">
           <h2 className="listings-title">Featured Properties</h2>
           <RealScoutOfficeListings />
