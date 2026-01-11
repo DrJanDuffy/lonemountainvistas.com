@@ -40,6 +40,9 @@ out/
 **/.vitepress/dist
 **/.vitepress/cache
 
+# Cloned repositories
+lonemountainvistas.github.io/
+
 # Cache directories
 .cache/
 .temp/
