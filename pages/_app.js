@@ -13,8 +13,6 @@ function MyApp({ Component, pageProps }) {
         {/* Preconnect to external domains for faster resource loading */}
         <link rel="preconnect" href="https://em.realscout.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://em.realscout.com" />
-        {/* Preload critical fonts */}
-        <link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
       </Head>
 
       {/* RealScout Widget Script - Loaded with lazy strategy to improve initial page load */}
