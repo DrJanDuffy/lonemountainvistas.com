@@ -9,6 +9,19 @@
       "staging": true
     }
   },
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://www.lonemountainvistas.com/$1",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "lonemountainvistas.com"
+        }
+      ]
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
