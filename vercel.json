@@ -3,12 +3,6 @@
   "framework": "nextjs",
   "regions": ["iad1"],
   "cleanUrls": true,
-  "git": {
-    "deploymentEnabled": {
-      "main": true,
-      "staging": true
-    }
-  },
   "redirects": [
     {
       "source": "/(.*)",
