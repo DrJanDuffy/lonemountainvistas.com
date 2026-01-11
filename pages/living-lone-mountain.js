@@ -13,8 +13,8 @@ export default function LivingLoneMountain() {
         <meta property="og:title" content="Living in Lone Mountain: Community Guide" />
         <meta property="og:description" content="Complete guide to living in Lone Mountain, northwest Las Vegas, including community amenities, recreational opportunities, shopping, dining, and lifestyle benefits." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.lonemountainvistas.com/living-lone-mountain" />
-        <link rel="canonical" href="https://www.lonemountainvistas.com/living-lone-mountain" />
+        <meta property="og:url" content="https://lonemountainvistas.com/living-lone-mountain" />
+        <link rel="canonical" href="https://lonemountainvistas.com/living-lone-mountain" />
       </Head>
 
       <main className="container mx-auto px-4 py-8 max-w-4xl">

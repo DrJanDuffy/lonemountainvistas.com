@@ -13,8 +13,8 @@ export default function LoneMountainPark() {
         <meta property="og:title" content="Lone Mountain Regional Park: Hiking Trails & Summit Views" />
         <meta property="og:description" content="Explore Lone Mountain Regional Park's scenic trails offering desert vistas and panoramic city views from the summit. Perfect for families, hikers, and outdoor enthusiasts." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.lonemountainvistas.com/lone-mountain-park" />
-        <link rel="canonical" href="https://www.lonemountainvistas.com/lone-mountain-park" />
+        <meta property="og:url" content="https://lonemountainvistas.com/lone-mountain-park" />
+        <link rel="canonical" href="https://lonemountainvistas.com/lone-mountain-park" />
       </Head>
 
       <main className="container mx-auto px-4 py-8 max-w-4xl">
