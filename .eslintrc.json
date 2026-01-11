@@ -25,11 +25,12 @@
     "no-unused-vars": "warn",
     "no-console": "warn",
     "no-useless-escape": "warn",
-    "no-undef": ["error", { "globals": { "gtag": "readonly", "Cerebras": "readonly" } }],
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off"
   },
   "globals": {
+    "gtag": "readonly",
+    "Cerebras": "readonly",
     "getInteractionDepth": "readonly",
     "realScoutConfig": "readonly",
     "requestQueue": "readonly",
