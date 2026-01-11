@@ -83,6 +83,14 @@ export default function Home() {
               <span className="nav-link-title">Seller's Guide</span>
               <span className="nav-link-desc">Home selling resources</span>
             </Link>
+            <Link href="/market-reports" className="nav-link">
+              <span className="nav-link-title">Market Reports</span>
+              <span className="nav-link-desc">Market trends & statistics</span>
+            </Link>
+            <Link href="/resources" className="nav-link">
+              <span className="nav-link-title">Resources</span>
+              <span className="nav-link-desc">Helpful tools & information</span>
+            </Link>
           </div>
         </nav>
 
