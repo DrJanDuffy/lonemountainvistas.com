@@ -1,7 +1,7 @@
 {
   "name": "lone-mountain-vistas",
   "version": "1.0.0",
-  "description": "Lone Mountain Vistas Real Estate Website",
+  "description": "Lone Mountain Vistas Real Estate Website - Next.js 15 App",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
