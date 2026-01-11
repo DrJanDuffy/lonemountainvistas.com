@@ -10,12 +10,17 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Preconnect to external domains for faster resource loading */}
+        <link rel="preconnect" href="https://em.realscout.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://em.realscout.com" />
+        {/* Preload critical fonts */}
+        <link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
       </Head>
 
-      {/* RealScout Widget Script - Loaded globally for all pages */}
+      {/* RealScout Widget Script - Loaded with lazy strategy to improve initial page load */}
       <Script
         src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         type="module"
       />
       <style jsx global>{`
