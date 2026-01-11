@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Script from 'next/script';
 import '../styles/globals.css';
+import Navbar from '../components/Navbar';
 
 // RealScout Agent ID - Update this with your actual RealScout agent encoded ID
 const REALSCOUT_AGENT_ID = "QWdlbnQtMjI1MDUw";
@@ -34,7 +35,10 @@ function MyApp({ Component, pageProps }) {
         }
       `}</style>
 
-      <Component {...pageProps} />
+      <Navbar />
+      <div className="pt-16 lg:pt-20">
+        <Component {...pageProps} />
+      </div>
     </>
   );
 }
