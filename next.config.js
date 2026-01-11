@@ -1,45 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
+  // swcMinify is enabled by default in Next.js 15, no need to specify
   images: {
     domains: ['lonemountainvistas.com', 'images.pexels.com'],
-    unoptimized: false,
+    // Image optimization is not available with static export
+    unoptimized: true,
   },
-  // Configure build output for Vercel
+  // Configure build output for static export
   output: 'export',
   // Disable x-powered-by header
   poweredByHeader: false,
-  // Configure headers for security
-  async headers() {
-    return [
-      {
-        source: '/:path*',
-        headers: [
-          {
-            key: 'X-DNS-Prefetch-Control',
-            value: 'on'
-          },
-          {
-            key: 'Strict-Transport-Security',
-            value: 'max-age=63072000; includeSubDomains; preload'
-          },
-          {
-            key: 'X-Frame-Options',
-            value: 'DENY'
-          },
-          {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff'
-          },
-          {
-            key: 'X-XSS-Protection',
-            value: '1; mode=block'
-          }
-        ]
-      }
-    ];
-  }
+  // Note: Headers are configured in vercel.json for static exports
+  // Headers() function is not compatible with static export
 };
 
-module.exports = nextConfig; 
+module.exports = nextConfig;

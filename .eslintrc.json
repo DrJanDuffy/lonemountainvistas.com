@@ -6,8 +6,7 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended",
-    "prettier"
+    "plugin:react/recommended"
   ],
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -36,4 +35,4 @@
     "requestQueue": "readonly",
     "openLightbox": "readonly"
   }
-} 
+}

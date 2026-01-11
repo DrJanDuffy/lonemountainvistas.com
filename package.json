@@ -5,16 +5,15 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export -o out",
     "start": "next start -p $PORT"
   },
   "dependencies": {
-    "next": "15.2.4",
+    "next": "15.2.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
-    "eslint-config-next": "^15.2.4"
+    "eslint-config-next": "^15.2.6"
   }
 }
