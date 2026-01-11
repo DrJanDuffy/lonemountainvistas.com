@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import RealScoutAdvancedSearch from '../components/RealScoutAdvancedSearch';
+import RealScoutSimpleSearch from '../components/RealScoutSimpleSearch';
 import RealScoutOfficeListings from '../components/RealScoutOfficeListings';
 
 export default function LivingLoneMountain() {

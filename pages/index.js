@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import RealScoutWidget from '../components/RealScoutWidget';
 import RealScoutAdvancedSearch from '../components/RealScoutAdvancedSearch';
+import RealScoutSimpleSearch from '../components/RealScoutSimpleSearch';
 import RealScoutOfficeListings from '../components/RealScoutOfficeListings';
 
 export default function Home() {
@@ -85,7 +86,9 @@ export default function Home() {
           <div className="hero-search-container">
             <h2 className="hero-search-title">Start Your Property Search</h2>
             <p className="hero-search-subtitle">Search by neighborhood, city, or school</p>
-            <RealScoutAdvancedSearch className="hero-search-widget" />
+            <div className="flex justify-center">
+              <RealScoutSimpleSearch className="hero-simple-search-widget" />
+            </div>
           </div>
         </section>
 
@@ -158,329 +161,85 @@ export default function Home() {
       <style jsx>{`
         .container {
           min-height: 100vh;
-          width: 100%;
-          padding: 0;
-          background: linear-gradient(to bottom, #f7f9fc, #ffffff);
-        }
-        main {
-          width: 100%;
-          max-width: 100%;
-        }
-
-        /* Hero Section Styles */
-        .hero-section {
-          width: 100%;
-          max-width: 1400px;
-          margin: 0 auto;
-          padding: 4rem 1.5rem 3rem;
-        }
-
-        .hero-content {
-          display: grid;
-          grid-template-columns: 1fr;
-          gap: 3rem;
-          margin-bottom: 4rem;
-        }
-
-        @media (min-width: 1024px) {
-          .hero-content {
-            grid-template-columns: 1.2fr 1fr;
-            gap: 4rem;
-            align-items: start;
-          }
-        }
-
-        .hero-text {
-          text-align: center;
-        }
-
-        @media (min-width: 1024px) {
-          .hero-text {
-            text-align: left;
-          }
-        }
-
-        .hero-title {
-          font-size: 2.5rem;
-          line-height: 1.1;
-          font-weight: 800;
-          color: #0A2540;
-          margin-bottom: 1.5rem;
-        }
-
-        @media (min-width: 768px) {
-          .hero-title {
-            font-size: 3.5rem;
-          }
-        }
-
-        @media (min-width: 1024px) {
-          .hero-title {
-            font-size: 4rem;
-          }
-        }
-
-        .hero-title-accent {
-          color: #1E6BB8;
-          display: block;
-        }
-
-        .hero-subtitle {
-          font-size: 1.125rem;
-          line-height: 1.7;
-          color: #4B5563;
-          margin-bottom: 2.5rem;
-          max-width: 600px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        @media (min-width: 1024px) {
-          .hero-subtitle {
-            margin-left: 0;
-            margin-right: 0;
-            font-size: 1.25rem;
-          }
-        }
-
-        .hero-cta-group {
           display: flex;
           flex-direction: column;
-          gap: 1rem;
-          margin-bottom: 3rem;
           justify-content: center;
-        }
-
-        @media (min-width: 640px) {
-          .hero-cta-group {
-            flex-direction: row;
-            justify-content: center;
-          }
-        }
-
-        @media (min-width: 1024px) {
-          .hero-cta-group {
-            justify-content: flex-start;
-          }
-        }
-
-        .hero-cta-primary {
-          display: inline-flex;
           align-items: center;
-          justify-content: center;
-          padding: 1rem 2rem;
-          font-size: 1.125rem;
-          font-weight: 600;
-          color: white;
-          background: #1E6BB8;
-          border-radius: 0.75rem;
-          text-decoration: none;
-          transition: all 0.2s;
-          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-
-        .hero-cta-primary:hover {
-          background: #155A94;
-          transform: translateY(-2px);
-          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-
-        .hero-cta-secondary {
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          padding: 1rem 2rem;
-          font-size: 1.125rem;
-          font-weight: 600;
-          color: #1E6BB8;
-          background: white;
-          border: 2px solid #1E6BB8;
-          border-radius: 0.75rem;
-          text-decoration: none;
-          transition: all 0.2s;
-        }
-
-        .hero-cta-secondary:hover {
-          background: #1E6BB8;
-          color: white;
-          transform: translateY(-2px);
-        }
-
-        .hero-stats {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem;
-          padding-top: 2rem;
-          border-top: 1px solid #E5E7EB;
-        }
-
-        .stat-item {
           text-align: center;
+          padding: 20px;
+          background: linear-gradient(to bottom, #f7f9fc, #e3e8ef);
         }
-
-        .stat-number {
-          font-size: 2rem;
-          font-weight: 700;
-          color: #1E6BB8;
-          margin-bottom: 0.25rem;
+        main {
+          max-width: 800px;
         }
-
-        @media (min-width: 768px) {
-          .stat-number {
-            font-size: 2.5rem;
-          }
+        h1 {
+          font-size: 3rem;
+          margin-bottom: 1rem;
+          color: #0A2540;
         }
-
-        .stat-label {
-          font-size: 0.875rem;
-          color: #6B7280;
-          font-weight: 500;
+        .tagline {
+          font-size: 1.5rem;
+          color: #3A8DDE;
+          margin-bottom: 2rem;
         }
-
-        /* Agent Card Styles */
-        .hero-agent-card {
-          background: white;
-          border-radius: 1.5rem;
-          box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-          overflow: hidden;
-          max-width: 400px;
-          margin: 0 auto;
-        }
-
-        @media (min-width: 1024px) {
-          .hero-agent-card {
-            margin: 0;
-            position: sticky;
-            top: 6rem;
-          }
-        }
-
-        .agent-card-header {
-          background: linear-gradient(135deg, #1a365d 0%, #1E6BB8 100%);
-          padding: 1.5rem;
-          text-align: center;
-        }
-
-        .agent-badge {
-          display: inline-block;
-          background: rgba(255, 255, 255, 0.2);
-          color: white;
-          padding: 0.5rem 1rem;
-          border-radius: 9999px;
-          font-size: 0.875rem;
-          font-weight: 600;
-          backdrop-filter: blur(10px);
-        }
-
-        .agent-card-content {
+        .contact-info {
+          margin-top: 2rem;
           padding: 2rem;
+          background: white;
+          border-radius: 12px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          max-width: 600px;
         }
-
-        .agent-card-name {
-          font-size: 1.75rem;
+        .agent-name {
+          font-size: 1.8rem;
           font-weight: 700;
           color: #0A2540;
           margin-bottom: 0.5rem;
-          text-align: center;
         }
-
-        .agent-card-company {
+        .company-name {
+          font-size: 1.1rem;
+          color: #1E6BB8;
+          font-weight: 600;
+          margin-bottom: 0.3rem;
+        }
+        .team-name {
           font-size: 1rem;
-          color: #1E6BB8;
-          font-weight: 600;
-          margin-bottom: 0.25rem;
-          text-align: center;
+          color: #666;
+          margin-bottom: 1rem;
         }
-
-        .agent-card-role {
-          font-size: 0.875rem;
-          color: #6B7280;
-          margin-bottom: 1.5rem;
-          text-align: center;
+        .tagline-sub {
+          font-size: 1.2rem;
+          color: #0A2540;
+          font-weight: 500;
+          margin: 1rem 0 0.5rem 0;
         }
-
-        .agent-card-divider {
-          height: 1px;
-          background: #E5E7EB;
-          margin: 1.5rem 0;
-        }
-
-        .agent-card-contact {
-          display: flex;
-          flex-direction: column;
-          gap: 1rem;
-          margin-bottom: 1.5rem;
-        }
-
-        .agent-phone,
-        .agent-email {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 0.75rem;
-          padding: 0.875rem 1.5rem;
-          background: #F3F4F6;
-          border-radius: 0.75rem;
-          color: #1E6BB8;
-          text-decoration: none;
-          font-weight: 600;
-          transition: all 0.2s;
-        }
-
-        .agent-phone:hover,
-        .agent-email:hover {
-          background: #1E6BB8;
-          color: white;
-          transform: translateY(-2px);
-        }
-
-        .agent-card-tagline {
-          text-align: center;
-          font-size: 0.875rem;
+        .expertise {
+          font-size: 1rem;
           color: #059669;
           font-weight: 500;
+          margin-bottom: 1.5rem;
         }
-
-        /* Hero Search Container */
-        .hero-search-container {
-          background: white;
-          border-radius: 1.5rem;
-          padding: 2.5rem;
-          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-          max-width: 900px;
-          margin: 0 auto;
+        .contact-details {
+          margin-top: 1.5rem;
+          padding-top: 1.5rem;
+          border-top: 2px solid #e3e8ef;
         }
-
-        @media (min-width: 768px) {
-          .hero-search-container {
-            padding: 3rem;
-          }
+        .contact-details p {
+          margin: 0.8rem 0;
+          font-size: 1.1rem;
         }
-
-        .hero-search-title {
-          font-size: 2rem;
-          font-weight: 700;
-          color: #0A2540;
-          margin-bottom: 0.75rem;
-          text-align: center;
+        .contact-details a {
+          color: #1E6BB8;
+          text-decoration: underline;
+          transition: color 0.2s;
         }
-
-        @media (min-width: 768px) {
-          .hero-search-title {
-            font-size: 2.5rem;
-          }
+        .contact-details a:hover {
+          color: #155A94;
+          text-decoration: underline;
         }
-
-        .hero-search-subtitle {
-          font-size: 1.125rem;
-          color: #6B7280;
-          margin-bottom: 2rem;
-          text-align: center;
-        }
-
-        .hero-search-widget {
-          width: 100%;
-          min-height: 200px;
+        .contact-details a:focus {
+          outline: 2px solid #1E6BB8;
+          outline-offset: 2px;
         }
         .navigation {
           margin-top: 3rem;

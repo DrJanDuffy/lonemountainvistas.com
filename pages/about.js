@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import RealScoutAdvancedSearch from '../components/RealScoutAdvancedSearch';
+import RealScoutSimpleSearch from '../components/RealScoutSimpleSearch';
 import RealScoutOfficeListings from '../components/RealScoutOfficeListings';
 
 export default function About() {
@@ -93,8 +94,9 @@ export default function About() {
 
           <div className="mt-12 pt-8 border-t border-gray-200">
             <h3 className="text-2xl font-semibold text-[#0A2540] mb-4">Search Homes in Lone Mountain</h3>
-            <div className="bg-blue-50 p-6 rounded-lg mb-8">
-              <RealScoutAdvancedSearch className="about-search-widget" />
+            <p className="text-gray-600 mb-4">Search by neighborhood, city, or school</p>
+            <div className="bg-blue-50 p-6 rounded-lg mb-8 flex justify-center">
+              <RealScoutSimpleSearch className="about-simple-search-widget" />
             </div>
           </div>
         </article>

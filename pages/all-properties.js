@@ -22,7 +22,10 @@ export default function AllProperties({ properties }) {
 
         <div className="mb-12 bg-blue-50 p-6 rounded-lg">
           <h2 className="text-2xl font-bold text-[#0A2540] mb-4 text-center">Search Properties</h2>
-          <RealScoutAdvancedSearch className="properties-search-widget" />
+          <p className="text-gray-600 mb-4 text-center">Search by neighborhood, city, or school</p>
+          <div className="flex justify-center">
+            <RealScoutSimpleSearch className="all-properties-simple-search-widget" />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
