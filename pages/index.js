@@ -110,7 +110,7 @@ export default function Home() {
         }
         .company-name {
           font-size: 1.1rem;
-          color: #3A8DDE;
+          color: #1E6BB8;
           font-weight: 600;
           margin-bottom: 0.3rem;
         }
@@ -127,7 +127,7 @@ export default function Home() {
         }
         .expertise {
           font-size: 1rem;
-          color: #16B286;
+          color: #059669;
           font-weight: 500;
           margin-bottom: 1.5rem;
         }
@@ -141,13 +141,17 @@ export default function Home() {
           font-size: 1.1rem;
         }
         .contact-details a {
-          color: #3A8DDE;
-          text-decoration: none;
+          color: #1E6BB8;
+          text-decoration: underline;
           transition: color 0.2s;
         }
         .contact-details a:hover {
-          color: #2D7BC7;
+          color: #155A94;
           text-decoration: underline;
+        }
+        .contact-details a:focus {
+          outline: 2px solid #1E6BB8;
+          outline-offset: 2px;
         }
         .navigation {
           margin-top: 3rem;
