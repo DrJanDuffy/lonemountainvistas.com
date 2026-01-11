@@ -12,6 +12,8 @@ export default function AllProperties({ properties }) {
         <meta name="description" content="Browse our exclusive collection of luxury properties in the Lone Mountain area of Las Vegas, Nevada." />
         <meta property="og:title" content="All Properties | Lone Mountain Vistas" />
         <meta property="og:description" content="Browse our exclusive collection of luxury properties in the Lone Mountain area of Las Vegas, Nevada." />
+        <link rel="canonical" href="https://www.lonemountainvistas.com/all-properties" />
+        <meta property="og:url" content="https://www.lonemountainvistas.com/all-properties" />
       </Head>
 
       <main className="container mx-auto px-4 py-8">

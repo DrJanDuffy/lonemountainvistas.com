@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   // swcMinify is enabled by default in Next.js 15, no need to specify
   images: {
-    domains: ['lonemountainvistas.com', 'images.pexels.com'],
+    domains: ['lonemountainvistas.com', 'www.lonemountainvistas.com', 'images.pexels.com'],
     // Image optimization is not available with static export
     unoptimized: true,
   },

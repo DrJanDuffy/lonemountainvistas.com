@@ -13,7 +13,8 @@ export default function EstatesLoneMountain() {
         <meta property="og:title" content="The Estates at Lone Mountain: Luxury Custom Homes" />
         <meta property="og:description" content="Premium luxury community near Lone Mountain Regional Park featuring custom homes, modern amenities, and convenient access to hiking trails and Summerlin." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://lonemountainvistas.com/estates-lone-mountain" />
+        <meta property="og:url" content="https://www.lonemountainvistas.com/estates-lone-mountain" />
+        <link rel="canonical" href="https://www.lonemountainvistas.com/estates-lone-mountain" />
       </Head>
 
       <main className="container mx-auto px-4 py-8 max-w-4xl">

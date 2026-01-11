@@ -12,8 +12,9 @@ export default function LoneMountainVistaV() {
         <meta name="keywords" content="Lone Mountain Vista V, Lone Mountain Vista V Las Vegas, northwest Las Vegas neighborhood, walkable neighborhood Las Vegas, Las Vegas residential neighborhood, Majestic Park area, Shadow Hills area" />
         <meta property="og:title" content="Lone Mountain Vista V: Neighborhood Guide" />
         <meta property="og:description" content="Complete guide to Lone Mountain Vista V neighborhood in northwest Las Vegas, featuring community activities, walkability, and resident insights." />
+        <meta property="og:url" content="https://www.lonemountainvistas.com/lone-mountain-vista-v" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://lonemountainvistas.com/lone-mountain-vista-v" />
+        <link rel="canonical" href="https://www.lonemountainvistas.com/lone-mountain-vista-v" />
       </Head>
 
       <main className="container mx-auto px-4 py-8 max-w-4xl">

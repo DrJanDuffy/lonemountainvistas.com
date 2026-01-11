@@ -10,6 +10,8 @@ export default function Home() {
       <Head>
         <title>Lone Mountain Vistas | Luxury Real Estate in Northwest Las Vegas</title>
         <meta name="description" content="Lone Mountain Vistas - Premier luxury real estate in northwest Las Vegas. Explore properties near Lone Mountain Regional Park, The Estates at Lone Mountain, and discover the Lone Mountain lifestyle." />
+        <link rel="canonical" href="https://www.lonemountainvistas.com/" />
+        <meta property="og:url" content="https://www.lonemountainvistas.com/" />
       </Head>
       <main>
         <h1>Lone Mountain Vistas</h1>
