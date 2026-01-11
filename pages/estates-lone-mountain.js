@@ -269,6 +269,11 @@ export default function EstatesLoneMountain() {
             </ul>
           </div>
         </article>
+
+        <section className="office-listings-section mt-12">
+          <h2 className="text-3xl font-bold text-[#0A2540] mb-6 text-center">Featured Properties</h2>
+          <RealScoutOfficeListings />
+        </section>
       </main>
     </>
   );

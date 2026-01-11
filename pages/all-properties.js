@@ -57,6 +57,11 @@ export default function AllProperties({ properties }) {
             </div>
           ))}
         </div>
+
+        <section className="office-listings-section mt-12">
+          <h2 className="text-3xl font-bold text-[#0A2540] mb-6 text-center">All Office Listings</h2>
+          <RealScoutOfficeListings />
+        </section>
       </main>
     </>
   );
