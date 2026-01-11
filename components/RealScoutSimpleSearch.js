@@ -9,9 +9,11 @@ export default function RealScoutSimpleSearch({
   className = ""
 }) {
   return (
-    <realscout-simple-search
-      agent-encoded-id={agentEncodedId}
-      class={className}
-    ></realscout-simple-search>
+    <div className={className} style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+      <realscout-simple-search
+        agent-encoded-id={agentEncodedId}
+        style={{ width: '100%', minHeight: '200px' }}
+      ></realscout-simple-search>
+    </div>
   );
 }

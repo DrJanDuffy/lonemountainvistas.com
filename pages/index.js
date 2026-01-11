@@ -243,6 +243,8 @@ export default function Home() {
         }
         .navigation {
           margin-top: 3rem;
+          margin-left: auto;
+          margin-right: auto;
           width: 100%;
           max-width: 900px;
         }
@@ -298,12 +300,10 @@ export default function Home() {
           margin-bottom: 1.5rem;
           text-align: center;
         }
-        .homepage-search-widget {
-          width: 100%;
-          min-height: 200px;
-        }
         .office-listings-section {
           margin-top: 3rem;
+          margin-left: auto;
+          margin-right: auto;
           width: 100%;
           max-width: 1200px;
           padding: 2rem;
@@ -334,6 +334,17 @@ export default function Home() {
           box-sizing: border-box;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
             Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        }
+        /* RealScout widget styles - must be global to apply to custom elements */
+        .homepage-search-widget,
+        .hero-simple-search-widget {
+          width: 100%;
+          min-height: 200px;
+        }
+        realscout-simple-search.homepage-search-widget,
+        realscout-simple-search.hero-simple-search-widget {
+          width: 100%;
+          min-height: 200px;
         }
       `}</style>
     </div>
